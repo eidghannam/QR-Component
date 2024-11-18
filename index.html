@@ -33,46 +33,38 @@
         background-color: hsl(212, 45%, 89%);
       }
 
-      .conainer {
+      .container {
         width: 300px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         height: 500px;
-        padding: 20px;
-
+        padding: 16px 16px 40px 16px;
         background-color: hsl(0, 0%, 100%);
         border-radius: 15px;
       }
-      .conainer .img-container {
+
+      .container img {
         width: 100%;
-        flex-basis: 60%;
-        background-image: url(./images/image-qr-code.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-bottom: 30px;
         border-radius: 12px;
-      }
-
-      .conainer .description-container {
-        text-align: center;
-        color: hsl(212, 45%, 89%);
-
-        color: hsl(218, 44%, 22%);
-      }
-
-      .conainer .description-container .upper-paragraph {
         margin-bottom: 30px;
-        font-size: 15px;
+      }
+
+      .container .description-container {
+        text-align: center;
+      }
+
+      .container .description-container .upper-paragraph {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 22px;
         font-weight: 700;
         text-align: center;
-        padding: 0px 30px;
         color: hsl(218, 44%, 22%);
       }
 
-      .conainer .description-container .lower-paragraph {
+      .container .description-container .lower-paragraph {
         font-size: 15px;
         font-weight: 400;
         text-align: center;
@@ -82,12 +74,12 @@
     </style>
   </head>
   <body>
-    <div class="conainer">
-      <div class="img-container"></div>
+    <div class="container">
+      <img src="./images/image-qr-code.png" alt="QR Code Image" />
       <div class="description-container">
-        <p class="upper-paragraph">
+        <h1 class="upper-paragraph">
           Improve your front-end skills by building projects
-        </p>
+        </h1>
         <p class="lower-paragraph">
           Scan the QR code to visit Frontend Mentor and take your coding skills
           to the next level
